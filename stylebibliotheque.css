@@ -1,0 +1,144 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: yellow;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.bibliotheque-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.content-wrapper {
+  max-width: 900px;
+  width: 100%;
+  padding: 20px;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Titres et Texte */
+h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  animation: slideDown 0.8s ease-in-out;
+}
+
+.intro {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.important {
+  color: red;
+  font-weight: bold;
+}
+
+/* Livre Card */
+.livre-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #111;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(255, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: zoomIn 1s ease;
+}
+
+.livre-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 10px 20px rgba(255, 0, 0, 0.5);
+}
+
+.livre-image {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.livre-details {
+  padding: 20px;
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.livre-details h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.livre-prix {
+  font-size: 1.4em;
+  color: red;
+  margin-bottom: 15px;
+}
+
+.livre-commande {
+  background: linear-gradient(to right, #ffcc00, #ffaa00);
+  color: #000;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1em;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+}
+
+.livre-commande:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+}
+
+/* Message de confirmation */
+.confirmation-message {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: limegreen;
+  display: none;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .livre-card {
+    flex-direction: column;
+  }
+
+  .livre-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .livre-details {
+    text-align: center;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}

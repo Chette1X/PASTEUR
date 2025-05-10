@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Révolution en Christ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background: url('accueil.jpg') center top / cover no-repeat fixed;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section id="home">
+      <div class="welcome-container animate__animated animate__fadeInDown">
+        <div class="welcome-text">
+          <p><strong>Bienvenue à Révolution En Christ, l’université du combat spirituel.</strong><br>
+            Je suis le prophète Yedo, je vous souhaite à tous bienvenue.
+          </p>
+        </div>
+        <p>Cliquez ici pour accéder à mes différents réseaux sociaux.</p>
+        <div class="social-icons" aria-label="Réseaux sociaux">
+          <a href="https://www.tiktok.com/@jonathanyedo9" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://wa.me/33782514586" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/share/15H3wuoYLS/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/jonathan_yedo/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@yedolathyedojonathan659" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="home-links">
+        <div class="home-card" onclick="navigate('audio.html')"><i class="fas fa-headphones-alt"></i><span>Prière Audio</span></div>
+        <div class="home-card" onclick="navigate('bibliotheque.html')"><i class="fas fa-book"></i><span>Bibliothèque</span></div>
+        <div class="home-card" onclick="navigate('temoignage.html')"><i class="fas fa-comment-dots"></i><span>Témoignages</span></div>
+        <div class="home-card" onclick="navigate('dime.html')"><i class="fas fa-hand-holding-usd"></i><span>Dîmes & Offrandes</span></div>
+        <div class="home-card" onclick="navigate('routine.html')"><i class="fas fa-sun"></i><span>Routine de Prière</span></div>
+        <div class="home-card" onclick="navigate('album.html')"><i class="fas fa-images"></i><span>Album Photo</span></div>
+        <div class="home-card" onclick="navigate('rdv.html')"><i class="fas fa-calendar-alt"></i><span>Prise de RDV</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Revolution En Christ - Tous droits réservés.</p>
+  </footer>
+
+  <audio id="click-sound" src="click.mp3" preload="auto"></audio>
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal"></script>
+  <script src="script.js"></script>
+</body>
+</html>

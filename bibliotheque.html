@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="stylebibliotheque.css" />
+  <script src="scriptbibliotheque.js" defer></script>
+  <title>Bibliothèque</title>
+</head>
+<body>
+  <section class="bibliotheque-section">
+    <div class="content-wrapper">
+      <h1>Bibliothèque</h1>
+      <p class="intro">Accédez à divers livres et documents <span class="important">spirituels</span>.</p>
+
+      <div class="livre-card">
+        <img src="livre.jpg" alt="Le Pouvoir de Ton Aura" class="livre-image" />
+        <div class="livre-details">
+          <h2>Le Pouvoir de Ton Aura</h2>
+          <p class="livre-prix">Prix : <span>8000 F</span></p>
+          <a href="https://wa.me/2250708161289" target="_blank" class="livre-commande" onclick="notifierCommande()">
+            Commander Maintenant
+          </a>
+        </div>
+      </div>
+
+      <div id="confirmation-message" class="confirmation-message">
+        ✅ Redirection vers WhatsApp...
+      </div>
+    </div>
+  </section>
+</body>
+</html>
